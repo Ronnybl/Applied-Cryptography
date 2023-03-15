@@ -16,6 +16,25 @@ import javax.crypto.Cipher;
 import util.CryptoTools;
 
 public class A4P3 {
+	/*We need to compute the HMAC of the message:
+
+  	m = "Mainly cloudy with 40 percent chance of showers"
+
+	using SHA1 and the symmetric key:
+
+	K = "This is an ultra-secret key"
+
+	The HMAC algorithm can be found in this Wikipedia article. Implement the algorithm as described in the article in the following two cases:
+
+	The padding constants are:
+
+	byte[] opad = bytes valued 0x5c
+	byte[] ipad = bytes valued 0x36
+
+	The padding constants are reversed:
+
+	byte[] opad = bytes valued 0x36
+	byte[] ipad = bytes valued 0x5c*/
 	public static void main(String[] args) throws Exception{
 		byte[] m = "Mainly cloudy with 40 percent chance of showers".getBytes();
 		byte[] k = "This is my secret key".getBytes();
