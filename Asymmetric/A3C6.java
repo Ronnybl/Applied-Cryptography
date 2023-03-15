@@ -18,6 +18,8 @@ import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 
 public class A3C6 {
+	/*Write a Java program that demonstrates for any given n and e (public key) in RSA Digital Signature Scheme, 
+	Eve can come up with a message "X" and signature of "X" (denoted as S) that would pass the verification step.*/
 	public static void main(String[] args) throws Exception{
 		BigInteger n = new BigInteger("55");  
         BigInteger e = new BigInteger("3");
