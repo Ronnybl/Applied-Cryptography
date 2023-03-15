@@ -8,6 +8,8 @@ import java.util.Random;
 import util.CryptoTools;
 
 public class A5P5 {
+	/*A secret m = 44 is to be shared amongst 5 parties such that any 3 of them can reconstitute the secret.
+	Implement Shamir's Secret Sharing scheme using Java to fulfill the stated requirements.*/
 	public static void main(String[] args) throws Exception{
 		int m = 44;
 		int n = 4;
