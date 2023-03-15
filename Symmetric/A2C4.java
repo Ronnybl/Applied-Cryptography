@@ -9,6 +9,8 @@ import javax.crypto.spec.SecretKeySpec;
 import util.CryptoTools;
 
 public class A2C4 {
+	/*Show that the DES key of all 1's double-encrypts any plaintext into itself. Also show that if key K encrypts P to C in DES then 
+	~K encrypts ~P to ~C, where ~ is the bitwise complement operator*/
 	public static void main(String[] args) throws Exception{
 		byte[] key = {-1,-1,-1,-1,-1,-1,-1,-1};
 		byte[] pt = "Facebook".getBytes();
