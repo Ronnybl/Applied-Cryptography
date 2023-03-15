@@ -14,6 +14,15 @@ import javax.crypto.spec.SecretKeySpec;
 import util.CryptoTools;
 
 public class A2P4 {
+	/*A 16B English string is encrypted using DES with the following parameters:
+    	No Padding
+    	The York Mode of Operation (more on this mode below)
+    	KEY: 0x 6B79466F724D4F50
+    	IV: 0x 6976466F724D4F50
+
+	The York Mode of Operation is a custom mode that is very similar to CBC except for one difference: 
+	the plaintext of the current block is XORed with the negation of the ciphertext of the previous block. 
+	As to the very first block, its plaintext is XORed with the negation of IV. */
 	public static void main(String[] args) throws Exception{
 		String keyString = "6B79466F724D4F50";
 		String ivString = "6976466F724D4F50";
