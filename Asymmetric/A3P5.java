@@ -4,6 +4,11 @@ import java.math.BigInteger;
 import java.util.Random;
 
 public class A3P5 {
+	/*Test the primality of the number:
+
+  	n = 1033931178476059651954862004553
+
+	using the Miller-Rabin test and the base 2. Write Composite or Inconclusive as your answer.*/
 	public static void main(String[] args) throws Exception{
 		BigInteger n = new BigInteger("1033931178476059651954862004553");
 		int base = 2;
