@@ -3,6 +3,8 @@ package foundation;
 import util.CryptoTools;
 
 public class C_Crypta {
+	//The goal of this exercise is to build a program that takes an Affince encrypted message
+	//and tries to decrypt it by trying every possible key in the key space.
 	public static void main(String[] args) throws Exception{
 		//Reads the contents of the file
 		byte[] fileCT = "AOPZPZQHFOLSSV".getBytes();//CryptoTools.fileToBytes("data/MSG2.ct");
