@@ -10,6 +10,13 @@ import javax.crypto.spec.SecretKeySpec;
 import util.CryptoTools;
 
 public class A2P5 {
+	/*Alice and Bob share the secret key K=FACEBOOK. Alice wants to send a plaintext PT to Bob, so she encrypts it using DES with ECB and 
+	no padding through the following process:
+
+  	CT = E[~K, E(K, PT)]
+
+	In other words, she encrypts first with the key K and then encrypts the result with the bitwise complement of K. 
+	The CT received by Bob is stored in hex in this file. Determine the English letters of PT. In particular, what is the first word in it?*/
 	public static void main(String[] args) throws Exception{
 		String keyString = "FACEBOOK";
 		String ctString = "8A9FF0E2CD27DA4DC7F0C810E73D0E3B3B27CA03762BAE85597995997E625BDF0FEC655994EDD4B0851D7955B3F66717A52F83D01D73ABD9C593DA8C8CCBB073BB19E78442D9AA6D13B307EC0E8EA191E6A21897A82F1A643DC3BE0E12854D01C6006AA1D0EB1B94CAC573908018F284";
