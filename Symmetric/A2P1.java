@@ -8,6 +8,15 @@ import javax.crypto.spec.SecretKeySpec;
 import util.CryptoTools;
 
 public class A2P1 {
+	/*An English string is encrypted with 128-bit AES using PKCS5 padding, the CBC mode of operation, and the following parameters:
+
+       	KEY: 0x 9F0DCEDB322F3C6873F9256E01376BA4
+       	IV:  0x 20FC19123087BF6CAC8D0F1254123004
+
+	Given that the ciphertext is:
+       	0x F38ADBA8A7B4CC613578355032205D50
+	
+	write a program that determines the letters of the plaintext and output them as English string, not in hex or binary. What is the first word of the plaintext?*/
 	public static void main(String[] args) throws Exception{
 		String keyString = "444F204E4F542054454C4C2045564521";
 		String ivString = "20FC19123087BF6CAC8D0F1254123004";
