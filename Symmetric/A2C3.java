@@ -11,6 +11,11 @@ import javax.crypto.spec.SecretKeySpec;
 import util.CryptoTools;
 
 public class A2C3 {
+	/*Encrypt the plaintext "Facebook" using DES without any padding or mode of operation (i.e. ECB) using the key "universe" 
+	and output the ciphertext in binary (use the byteToBin method in util). 
+	Next, generate a random number between 0 and 63; flip that bit in the plaintext; 
+	encrypt; and compute the number of bits in the ciphertext that have flipped as a result. 
+	Re-do this avalanche effect computation several times and determine the average number of flipped bits in the ciphertext.*/
 	public static void main(String[] args) throws Exception{
 		byte[] pt = CryptoTools.fileToBytes("data/A2C3.PT");
 		byte[] key = "universe".getBytes();
