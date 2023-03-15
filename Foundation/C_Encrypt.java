@@ -3,7 +3,8 @@ package foundation;
 import util.CryptoTools;
 
 public class C_Encrypt {
-
+	//Goal of this excerise is to build a program that takes a plaintext message, 
+	//cleans it (using CryptoTools.java) and encrypts it using a caesar cipher
 	public static void main(String[] args) throws Exception{
 		//Reads the contents of the file
 		byte[] filePT = CryptoTools.fileToBytes("data/MSG1.pt");	
