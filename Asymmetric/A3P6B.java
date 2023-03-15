@@ -16,6 +16,40 @@ import javax.crypto.spec.SecretKeySpec;
 import util.CryptoTools;
 
 public class A3P6B {
+	/*Alice and Bob establish a shared "secret" using ECDH protocol that they eventually used in AES block cipher in CBC mode with PKCS5 padding to encrypt their communications.
+
+    	byte[] iv = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+
+    	They have used provided ECDH key exchange protocol in Java (i.e., KeyAgreement.getInstance("ECDH")) to establish their shared secret and each has generated their public/private key pair using the default elliptic curve configurations provided by SunEC in Java (i.e.,  KeyFactory.getInstance("EC");)
+
+	Alice's Public Key (Encoded using X509EncodedKeySpec):
+	0x 3059301306072A8648CE3D020106082A8648CE3D03010703
+	42000450C35C2FB11926C2C91E089CFC743F9D942EE14B8D4
+	2E25AE6588C4F93DDFF6ACDF520F74AF3E2500EF2A5E2C346
+	D4DA7E92C1F89AD9FD4F3ED1B97DC3F39DC8
+
+	Alice's Private Key (Encoded using PKCS8EncodedKySpec):
+	0x 3041020100301306072A8648CE3D020106082A8648CE3D0301
+	070427302502010104200FE89D3070EECF985F971851B088EC976
+	05A08D037F3CF3463FED25BCE0037B5
+	
+	Bob's Public Key (Encoded using X509EncodedKeySpec):
+	0x 3059301306072A8648CE3D020106082A8648CE3D0301070342000467
+	8DF0E72D7FC86006174E506B1729081E5D1201936EBA8A39E8741E4F713F8
+	C29AE2E62038D95B36A585E2A87FEA73BE482611115457A3D3823EA5D79E
+	31154
+
+	Bob's Private Key (Encoded using PKCS8EncodedKySpec):
+	0x 3041020100301306072A8648CE3D020106082A8648CE3D0301070427302
+	50201010420090145EB296FD96158EDF5E59D20EBB8E7332BBE150784D9190
+	0DB2006980127
+
+	Bob received the following ciphertext from Alice:
+
+	CT = 0x 1B709B07A06E10FF16E7D76422E564FB73E63FD8BD69D59E4692104B327896E8
+
+	Try to decrypt the received ciphertext (hint: the plaintext is an English sentence).
+	Note: the provided values are in hexadecimal and you need to convert them into bytes using CrypTool auxiliary methods.*/
 	public static void main(String[] args) throws Exception{
 		byte[] aPub = CryptoTools.hexToBytes("3059301306072A8648CE3D020106082A8648CE3D0301070342000450C35C2FB11926C2C91E089CFC743F9D942EE14B8D42E25AE6588C4F93DDFF6ACDF520F74AF3E2500EF2A5E2C346D4DA7E92C1F89AD9FD4F3ED1B97DC3F39DC8");
 		byte[] aPriv = CryptoTools.hexToBytes("3041020100301306072A8648CE3D020106082A8648CE3D0301070427302502010104200FE89D3070EECF985F971851B088EC97605A08D037F3CF3463FED25BCE0037B5");
