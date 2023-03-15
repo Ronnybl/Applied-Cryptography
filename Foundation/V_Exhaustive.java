@@ -5,6 +5,8 @@ import java.math.BigInteger;
 import util.CryptoTools;
 
 public class V_Exhaustive {
+	//A Vigenere decrypter, this program determines the length of the key to help figure out
+	//the key.
 	public static void main(String[] args) throws Exception{
 		//Reads the contents of the file
 		byte[] fileCT = CryptoTools.fileToBytes("data/q1v1.ct");	 //"TFYPBGVXTNVSGMNVXMRPYCZTHMRH".getBytes();
