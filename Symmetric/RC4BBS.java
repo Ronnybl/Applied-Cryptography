@@ -1,10 +1,11 @@
 package symmetric;
 
 public class RC4BBS {
+	//This program demonstrates the stream ciphers RC4 and BBS (Blum Blum Shub)
 	public static void main() {
 
 	}
-
+	//Parameters include: Plaintext in binary, p and q are large prime numbers, and a seed
 	public static String BBS(String binPT, int p, int q, int seed) {
 		if (!isPrime(p) && !isPrime(q)) {
 			return "";
