@@ -6,6 +6,12 @@ import java.util.Arrays;
 import util.CryptoTools;
 
 public class A2C2 {
+	//Using OTP, can an adversary crack the One Time Password (OTP) and determine the message? both Bob and Alice are
+	//using a 128-bit key unique to them. Eve intercepts the three exchanged messages expressed 
+	//as hex strings:
+	//Alice Sends: 	0x 0A4F0C08003503492F247442105B5757
+  	//Bob Sends: 	0x 5E2769286B507A69494B066252343579
+  	//Alice Sends: 	0x 170708454B1116002A2E2111725F5000
 	public static void main(String[] args) throws Exception{
 		String aliceSends = "0A4F0C08003503492F247442105B5757";
 		String bobReturns = "5E2769286B507A69494B066252343579";
