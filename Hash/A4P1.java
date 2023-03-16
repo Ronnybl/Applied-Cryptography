@@ -30,7 +30,7 @@ public class A4P1 {
 
   	Meet me at 5 pm tomorrow
 
-	using 512-bit SHA2. After wards, show that if you send the message (in clear plaintext) and the signature to Alice then she can indeed verify 
+	using 512-bit SHA2. Afterwards, show that if you send the message (in clear plaintext) and the signature to Alice then she can indeed verify 
 	that it came from you and that its content is intact.*/
 	public static void main(String[] args) throws Exception{
 		BigInteger n = new BigInteger("94587468335128982981605019776781234618384857805657005686084562260910788622013722070926491690843853690071248130134427832324966728582532832363221542231787068203763027067400082835394459857525017707284768411819006776211493735326500782954621660256501187035611332577696332459049538105669711385995976912007767106063");
