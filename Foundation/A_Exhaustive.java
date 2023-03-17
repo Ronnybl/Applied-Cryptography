@@ -5,6 +5,7 @@ import java.math.BigInteger;
 import util.CryptoTools;
 
 public class A_Exhaustive {
+	//The goal of this question is to build a program that takes an Affine encrypted message and tries to decrypt it by trying every possible key in the key space.
 	public static void main(String[] args) throws Exception{
 		//Reads the contents of the file
 		byte[] fileCT = "kHrkn knhavug Bqqzon".getBytes();//CryptoTools.fileToBytes("data/MSG3.ct");	
